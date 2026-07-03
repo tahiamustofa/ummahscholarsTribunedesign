@@ -1,84 +1,48 @@
 "use client";
-import Image from "next/image";
-import EventFuntionState from "./components/EventFuntionState";
+import HeroSlider from "@/components/HeroSlider";
+import KeyApplications from "@/components/KeyApplications";
 
-import { useState } from "react";
+import Navbar from "@/components/Navbar";
+import SliderSwiper from "@/components/SliderSwiper";
 import { useRouter } from "next/navigation";
+import ResearchFeatures from "../components/ResearchFeatures";
 
 
   
 export default function Home() {
-  const [value, setValue] = useState(40);
+  
   let router = useRouter();
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-
-      <input
-        type="range"
-        min={0}
-        max="100"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        className="range text-blue-300 [--range-bg:orange] [--range-thumb:blue] [--range-fill:0]"
-      />
-      <p>Value: {value}</p>
+<>
+<div className=""> 
+ {/* Header */}
+  <Navbar></Navbar>
+  <HeroSlider></HeroSlider>
+      <div className="text-center max-w-4xl mx-auto px-4 space-y-4 z-10 mt-8 mb-3">
        
-     
-<button className="btn bg-[#FEE502] text-[#181600] border-[#f1d800]" onClick={()=>router.push('/home')}>Home</button>
-       <EventFuntionState></EventFuntionState>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        
+        <h1 className="text-xl lg:text-4xl font-bold font-serif text-black dark:text-white ">
+         
+          <span className="italic text-[#d1a34c]">Ummah Scholars Tribune</span>{" "}
+          
+        
+        </h1>
+       
+      </div>
+<div className="flex flex-col-reverse lg:flex-row items-center justify-center max-w-[1300px] mx-auto px-2 py-2 md:py-4">
+  <KeyApplications></KeyApplications>
+  <SliderSwiper></SliderSwiper>
+</div>
+
+<ResearchFeatures></ResearchFeatures>
+</div>
+
+{/* 2nd component  */}
+<div>
+
+  
+</div>
+</>
   );
 }
-
-
-
 

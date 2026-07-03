@@ -6,13 +6,16 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "framer-motion": "^12.23.22",
+    "lucide-react": "^0.562.0",
     "next": "15.4.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-icons": "^5.5.0",
     "swiper": "^12.0.2"
   },
   "devDependencies": {
