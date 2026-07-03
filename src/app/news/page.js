@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
+const goldColor = "#C5A059";
 const news = [
   {
     id: 1,
@@ -63,9 +64,14 @@ export default function NewsPage() {
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-4">
-          <p className="uppercase tracking-[6px] text-yellow-500 font-semibold">
-            Latest Updates
-          </p>
+          
+
+              <span 
+      className="text-xs font-bold uppercase tracking-[0.25em] mb-3 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/10 inline-block"
+      style={{ color: goldColor }}
+    >
+      Latest Updates
+    </span>
 
           <h1 className="text-4xl md:text-6xl font-bold mt-4">
             News & Announcements
