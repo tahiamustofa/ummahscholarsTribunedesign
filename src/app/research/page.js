@@ -10,44 +10,50 @@ export default function ResearchPage() {
   const goldColor = "#C5A059";
   const textColor = "#1A1A1A";
 
-  // ক্যাটাগরি লিস্ট
-  const categories = ["All", "Quranic Studies", "Hadith & Sunnah", "Islamic Finance", "Contemporary Issues"];
+  // নতুন এবং বিস্তৃত ক্যাটাগরি লিস্ট
+  const categories = [
+    "All", 
+    "Islamic and Foundational Studies", 
+    "Humanities and Social Studies", 
+    "Language, Literature and Civilization Studies", 
+    "Contemporary and Interdisciplinary Studies"
+  ];
 
-  // ডামি রিসার্চ ডাটা (আপনার প্রয়োজন মতো পরিবর্তন করে নিতে পারবেন)
+  // ডামি রিসার্চ ডাটা (নতুন ক্যাটাগরির সাথে সামঞ্জস্যপূর্ণ করা হয়েছে)
   const researchPapers = [
     {
       id: 1,
-      title: "The Role of Islamic Microfinance in Poverty Alleviation",
+      title: "Islamic and Foundational Studies",
       author: "Dr. Muhammad Al-Hasan",
       date: "June 2026",
-      category: "Islamic Finance",
+      category: "Islamic and Foundational Studies",
       abstract: "This paper examines contemporary microfinance models through the lens of Shariah principles, highlighting empirical data from South Asian Muslim communities...",
       downloadUrl: "#"
     },
     {
       id: 2,
-      title: "Nuances of Hadith Contextualization in the Digital Age",
+      title: "Humanities and Social Studies",
       author: "Prof. Abdul Rahman",
       date: "May 2026",
-      category: "Hadith & Sunnah",
-      abstract: "An in-depth methodological study exploring how digital databases impact the traditional understanding and verification process of prophetic narrations...",
+      category: "Humanities and Social Studies",
+      abstract: "An in-depth sociological study exploring how rapid urbanization impacts social cohesion, identity formation, and community structures among youth...",
       downloadUrl: "#"
     },
     {
       id: 3,
-      title: "Environmental Ethics in Quranic Exegesis (Tafsir)",
+      title: "Language, Literature and Civilization Studies",
       author: "Dr. Fatima Al-Zahra",
       date: "April 2026",
-      category: "Quranic Studies",
-      abstract: "A comprehensive review of classical and modern Tafsir literature regarding humanity's responsibility as stewards (Khulafa) of the Earth...",
+      category: "Language, Literature and Civilization Studies",
+      abstract: "A comprehensive review of classical styles of Arabic calligraphy and its preservation within contemporary Islamic civilizational architecture...",
       downloadUrl: "#"
     },
     {
       id: 4,
-      title: "Bioethics and Modern Medicine: An Islamic Jurisprudence Review",
+      title: "Contemporary and Interdisciplinary Studies",
       author: "Dr. Tariq Mahmood",
       date: "March 2026",
-      category: "Contemporary Issues",
+      category: "Contemporary and Interdisciplinary Studies",
       abstract: "Addressing modern medical advancements including gene editing and artificial life support from the framework of Maqasid al-Shariah...",
       downloadUrl: "#"
     }
@@ -63,43 +69,42 @@ export default function ResearchPage() {
       {/* নেভিগেশন বার */}
       <Navbar />
 
-      {/* পেইজ হেডার */}
-    {/* পেইজ হেডার সেকশন - ব্যাকগ্রাউন্ড ইমেজ সহ */}
-<div className="relative bg-stone-950 py-20 px-6 md:px-12 text-center overflow-hidden">
-  
-  {/* ব্যাকগ্রাউন্ড ইমেজ (public/research-bg.jpeg) */}
-  <div className="absolute inset-0 w-full h-full">
-    <Image
-      src="/8.png" // আপনার ইমেজের নাম ও এক্সটেনশন অনুযায়ী চেঞ্জ করতে পারেন
-      alt="Research Academic Banner"
-      fill
-      priority
-      className="object-cover object-center opacity-40" // ইমেজ স্পষ্ট করার জন্য অপাসিটি ৪০% রাখা হয়েছে
-    />
-    {/* ডার্ক গ্রেডিয়েন্ট ওভারলে যাতে লেখাগুলো চমৎকার ফুটে ওঠে */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/10 to-black/10" />
-  </div>
+      {/* পেইজ হেডার সেকশন - ব্যাকগ্রাউন্ড ইমেজ সহ */}
+      <div className="relative bg-stone-950 py-20 px-6 md:px-12 text-center overflow-hidden">
+        
+        {/* ব্যাকগ্রাউন্ড ইমেজ */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/research.jpeg"
+            alt="Research Academic Banner"
+            fill
+            priority
+            className="object-cover object-center opacity-40"
+          />
+          {/* ডার্ক গ্রেডিয়েন্ট ওভারলে */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/10 to-black/10" />
+        </div>
 
-  {/* মেইন কনটেন্ট (relative z-10 দেওয়া হয়েছে যেন ইমেজের উপরে থাকে) */}
-  <div className="relative z-10 max-w-3xl mx-auto">
-    <span 
-      className="text-xs font-bold uppercase tracking-[0.25em] mb-3 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/10 inline-block"
-      style={{ color: goldColor }}
-    >
-      Academic Publications
-    </span>
-    
-    <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 text-white drop-shadow-md">
-      Research & Academic <span style={{ color: goldColor }}>Studies</span>
-    </h1>
-    
-    <p className="text-gray-200 text-sm md:text-base max-w-2xl mx-auto leading-relaxed drop-shadow">
-      Explore peer-reviewed journals, scholarly articles, and contemporary Islamic research papers dedicated to bridging classical knowledge with modern challenges.
-    </p>
-  </div>
-</div>
+        {/* মেইন কনটেন্ট */}
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <span 
+            className="text-xs font-bold uppercase tracking-[0.25em] mb-3 bg-black/30 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/10 inline-block"
+            style={{ color: goldColor }}
+          >
+            Academic Publications
+          </span>
+          
+          <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 text-white drop-shadow-md">
+            Research & Academic <span style={{ color: goldColor }}>Studies</span>
+          </h1>
+          
+          <p className="text-gray-200 text-sm md:text-base max-w-2xl mx-auto leading-relaxed drop-shadow">
+            Explore peer-reviewed journals, scholarly articles, and contemporary Islamic research papers dedicated to bridging classical knowledge with modern challenges.
+          </p>
+        </div>
+      </div>
 
-      {/* মেইন কন্টেন্ট এরিয়া */}
+      {/* মেইন কন্টেন্ট এরিয়া */}
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 py-12">
         
         {/* ফিল্টার ট্যাব সমূহ */}
@@ -156,7 +161,7 @@ export default function ResearchPage() {
                 </p>
               </div>
 
-              {/* বটম অ্যাকশন এরিয়া */}
+              {/* বটম অ্যাকশন এরিয়া */}
               <div className="pt-4 border-t flex items-center justify-between border-gray-100">
                 <a 
                   href={paper.downloadUrl}
@@ -169,7 +174,7 @@ export default function ResearchPage() {
                   </svg>
                 </a>
 
-                {/* PDF ডাউনলোড বাটন ইফেক্ট */}
+                {/* PDF ডাউনলোড বাটন */}
                 <button 
                   className="p-2 rounded-full hover:bg-amber-50 transition-colors group"
                   title="Download PDF"

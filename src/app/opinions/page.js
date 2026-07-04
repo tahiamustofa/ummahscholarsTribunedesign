@@ -48,7 +48,7 @@ export default function OpinionsPage() {
       <div className="relative bg-stone-950 py-24 px-6 md:px-12 text-center overflow-hidden border-b" style={{ borderColor: `${goldColor}44` }}>
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/others.webp" 
+            src="/opinion.jpeg" 
             alt="Opinions Banner"
             fill
             priority

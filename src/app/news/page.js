@@ -55,7 +55,7 @@ export default function NewsPage() {
       <section className="relative h-[320px]">
 
         <Image
-          src="/newsmain.jpg"
+          src="/news/news2.jpeg"
           alt="News"
           fill
           className="object-cover object-center"
