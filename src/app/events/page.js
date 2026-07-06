@@ -56,11 +56,11 @@ export default function EventsPage() {
         {/* ব্যাকগ্রাউন্ড বইয়ের ছবি (পূর্নাঙ্গ ভিউ এর জন্য ওপরে অপাসিটি বাড়ানো হয়েছে) */}
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/events.jfif" 
+            src="/events.jpeg" 
             alt="Islamic Books Background"
             fill
             priority
-            className="opacity-45 object-cover  object-top" 
+            className="opacity-45 object-cover object-center" 
           />
           {/* হালকা স্মুথ ওভারলে */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />

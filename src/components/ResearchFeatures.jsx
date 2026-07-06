@@ -54,7 +54,7 @@ const features = [
 
 export default function ResearchFeatures() {
   return (
-    <section className="bg-[#f5f0e9] py-20">
+    <section className="bg-[#b88a2b] py-20">
       <div className="max-w-7xl mx-auto px-5">
 
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">

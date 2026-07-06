@@ -73,9 +73,11 @@ export default function ContactPage() {
                 </h4>
 
                 <p className="text-gray-600">
-                  Ummah Scholars Tribune
+                 
+                  
+                  Ummah Scholars Tribune (UST)
                   <br />
-                  Dhaka, Bangladesh
+Kuala Lumpur, Malaysia
                 </p>
               </div>
 
@@ -101,7 +103,7 @@ export default function ContactPage() {
                 </h4>
 
                 <p className="text-gray-600">
-                  +880 1234-567890
++8801719758581
                 </p>
               </div>
 
@@ -182,6 +184,8 @@ export default function ContactPage() {
 
         </div>
       </section>
+
+      
     </main>
   );
 }

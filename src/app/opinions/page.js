@@ -45,16 +45,16 @@ export default function OpinionsPage() {
       <Navbar />
 
       {/* হিরো সেকশন */}
-      <div className="relative bg-stone-950 py-24 px-6 md:px-12 text-center overflow-hidden border-b" style={{ borderColor: `${goldColor}44` }}>
+      <div className="relative bg-stone-900 py-24 px-6 md:px-12 text-center overflow-hidden border-b" style={{ borderColor: `${goldColor}44` }}>
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/opinion.jpeg" 
+            src="/opinions.jpeg" 
             alt="Opinions Banner"
             fill
             priority
             className="object-cover object-center opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/1 via-black/5 to-black/1" />
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
@@ -142,6 +142,30 @@ export default function OpinionsPage() {
             </article>
           ))}
         </div>
+      </div>
+
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 py-12">
+        <h3 className='text-xl md:text-3xl font-serif font-bold mb-4' style={{ color: goldColor }}>Editorial Policy</h3>
+ <p>
+ 
+
+1. Publication Standards
+Ummah Scholars Tribune (UST) is committed to publishing original scholarly, intellectual, and editorial content that reflects its mission, vision, and values. All submissions are expected to meet the following standards:
+Be original, unpublished, and not under review or consideration by any other publisher or platform.
+Make a meaningful scholarly or intellectual contribution that advances knowledge in its respective field.
+Demonstrate sound methodology, reliable evidence, and accurate referencing where applicable.
+Maintain high standards of quality, clarity, coherence, and professional presentation.
+Uphold academic integrity, respect intellectual property rights, and comply with internationally recognized publication ethics.
+Be free from plagiarism, fabrication, falsification, or any form of academic or professional misconduct.
+Disclose any actual or potential conflicts of interest that may affect the integrity or objectivity of the work.
+</p>
+<p className='mt-4'>
+2. Editorial Principles and Disclaimer
+Ummah Scholars Tribune (UST) is committed to fostering responsible scholarly dialogue and encouraging evidence-based, constructive discussions grounded in mutual respect, intellectual diversity, and professional ethics. The platform does not publish content that promotes personal abuse, hate speech, defamation, discrimination, or incitement.
+
+The opinions and views expressed in published materials are solely those of their respective authors and do not necessarily reflect the official views, editorial policy, or institutional position of Ummah Scholars Tribune (UST).
+ </p>
+
       </div>
     </main>
   );
