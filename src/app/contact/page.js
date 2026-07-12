@@ -90,7 +90,7 @@ Kuala Lumpur, Malaysia
                 </h4>
 
                 <p className="text-gray-600">
-                  info@ummahscholars.org
+                  info@ummahscholarstribune.com
                 </p>
               </div>
 
